@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Pholder</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/colorbox.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery-1.8.0.min.js"><\/script>')</script>
+	<script type="text/javascript" src="js/masonry.js"></script>
+	<script type="text/javascript" src="js/jquery.colorbox.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+	<div class="wrapper clearfix">
+		<nav class="clearfix">
+	
+			<a href="index.html" class="greybackground">home</a> 
+			<a href="#">about us</a>
+			<a href="#">tour</a>
+			<a href="search.html">flickr search</a>
+
+			<div class="rightnav">
+				<a href="#" id="signuplink">Sign Up</a>
+				<a href="#" id="loginlink">Log In</a>
+			</div>
+		</nav>
+
+
+		
+
+		<div class="logoholder">
+			<a href="#"><img src="images/smalllogo.png" class="logo" alt="pholder"></a>
+		</div> <!-- logoholder -->
+
+		<div class="popup">
+			<div class="pholderpopup"> 
+				<strong>Pholder</strong> is a new technology that makes image viewing and distributing faster than before. Our system allows you to share pictures with friends you invite to share access.
+			</div> 
+
+			<div class="arrow-left"></div>
+		</div> <!-- popup -->
+
+		<div class="top">
+
+			<div class="intro">
+				<h1>Share photos with your friends from one place</h1>
+				<span>Create an album, invite your friends, and view and download each other's pictures in minutes.</span>
+
+				<div class="getstartedholder">
+					<form method="get" action="#">
+						<input type="button" value="Get Started" id="frontbutton">
+					</form>
+				</div>
+			</div> <!-- intro -->
+
+
+			<div class="holder clearfix">
+				<img src="images/bison.jpg" id="firstimg" class="toppic" alt="bison">
+				<img src="images/eagle.jpg" id="secondimg" class="toppic" alt="eagle">
+				<img src="images/frog.jpg" id="thirdimg" class="toppic" alt="frog">
+				<img src="images/rabbit.jpg" id="fourthimg" class="toppic" alt="rabbit">
+				<img src="images/monkey.jpg" id="fifthimg" class="toppic" alt="monkey">
+				<img src="images/giraffe.jpg" id="sixthimg" class="toppic" alt="giraffe">
+				<img src="images/rhino.jpg" id="seventhimg" class="toppic" alt="rhino">
+			</div>
+
+		</div> <!-- top -->
+
+		<div class="formholder">
+			<form method="post" action="#" id="accountsubmit">
+				<label for="email">Email:</label>
+				<input type="text" id="email" name="email" placeholder="Email">
+				<span id="email_error">Email is invalid.</span>
+				<label for="username">Username:</label>
+				<input type="text" id="username" name="username" placeholder="Username">
+				<span id="username_error">Must be 3 letters or more.</span>
+				<label for="password">Password:</label>
+				<input type="password" id="password" name="password" placeholder="Password">
+				<span id="password_error">Password must include at least 1 number.</span>
+				<label for="confirm_password">Confirm Password:</label>
+				<input type="password" id="confirm_password" placeholder="Confirm Password">
+				<span id="confirm_error">Passwords do not match.</span>
+				<br>
+				<input type="submit" value="Submit!" id="signupsubmit">
+			</form>
+
+		</div> <!-- formholder -->
+
+	</div> <!-- wrapper -->
+</body>
+</html>
